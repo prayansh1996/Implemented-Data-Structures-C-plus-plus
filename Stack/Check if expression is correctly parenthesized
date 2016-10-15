@@ -1,0 +1,47 @@
+#include <iostream>
+#include "stack.h"
+using namespace std;
+
+template <class T>
+bool stack<T>::check_braces(const char *str)
+{
+    while(*str)
+    {   
+        if(*str=='(' || *str=='[' || *str=='{')
+        {   push(*str);}
+
+        else if(*str==')' || *str==']' || *str=='}')
+        {
+            if(top==NULL)
+            {   return 0;}
+
+            switch(*str)
+            {   case ')':   if(top->data=='(')
+                            {   pop(); break;}
+
+                case ']':   if(top->data=='[')
+                            {   pop(); break;}
+
+                case '}':   if(top->data=='{')
+                            {   pop(); break;}
+                            return 0;
+            }
+        }
+        str++;
+    }
+
+    if(top==NULL)
+    {   return 1;}
+    else
+    return 0;
+}
+
+
+
+int main()
+{
+    stack<char> S;
+    char str[]="{a+[   b + (c + d)] + (e + f) }", *ptr = str;
+    cout<<S.check_braces(str);
+    return 0;
+}
