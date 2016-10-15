@@ -1,5 +1,5 @@
 #include <iostream>
-#include "..\..\headers\BST.h"
+#include "BST.h"
 
 using namespace std;
 
