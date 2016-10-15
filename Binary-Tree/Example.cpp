@@ -1,5 +1,5 @@
 #include <iostream>
-#include "..\..\headers\binarytree_functions.h"
+#include "binarytree_functions.h"
 
 using namespace std;
 
