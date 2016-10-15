@@ -1,5 +1,5 @@
 #include <iostream>
-#include "..\..\headers\trie2.h"
+#include "trie2.h"
 
 int main()
 {
