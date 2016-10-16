@@ -56,5 +56,5 @@ class unweighted_undirected: public unweighted<T>, public undirected<T>
     template <typename P>   friend ostream& operator<<(ostream&, undirected<P> &G);
 
     public:
-    void addEle(int start, int end);
+    void addEle(int start, int end);//
 };
