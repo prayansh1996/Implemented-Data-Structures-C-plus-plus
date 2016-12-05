@@ -1,6 +1,6 @@
 #define from(x,y,i) for(int i=x; i<y; i++)
 #include <iostream>
-#include "..\tree.h"
+#include "tree.h"
 using namespace std;
 
 int main()
