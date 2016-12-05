@@ -1,6 +1,6 @@
 #define from(x,y,i) for(int i=x; i<y; i++)
 #include <iostream>
-#include "..\queue.h"
+#include "queue.h"
 using namespace std;
 
 int main()
