@@ -2,7 +2,6 @@
 #define HEAP_H_INCLUDED
 #include <functional>
 #include <iostream>
-#include <iomanip>
 #include <vector>
 #include <queue>
 #define forn(x) for(int y=1; y<=x; y++)
@@ -91,9 +90,9 @@ template <class T>  void maxHeap<T>::printArray()
 template <class T>  void maxHeap<T>::getMedian()
 {
     if((arr.size()-1)%2 == 0)
-    {   cout<<arr[left]<<" ("<<left<<") "<<arr[mid]<<" ("<<mid<<") "<<setw(20)<<"Right-  "<<arr[right]<<" ("<<right<<") ";}
+    {   cout<<arr[left]<<" ("<<left<<") "<<arr[mid]<<" ("<<mid<<") "<<"\t"<<"Right-  "<<arr[right]<<" ("<<right<<") ";}
     else
-    {   cout<<arr[mid]<<" ("<<mid<<")"<<setw(20)<<"Left & Right-  "<<arr[left]<<" ("<<left<<") "<<"\t "<<arr[right]<<" ("<<right<<") ";}
+    {   cout<<arr[mid]<<" ("<<mid<<")"<<"\t"<<"Left & Right-  "<<arr[left]<<" ("<<left<<") "<<"\t "<<arr[right]<<" ("<<right<<") ";}
 }
 
 //MAXHEAP HELPERS
